@@ -1,0 +1,29 @@
+# Starter HTML
+Boilerplate for HTML and TailwindCSS projects.
+
+## Usage
+This barebone boilerplate serves as starting point when developing web applications or sites. It eliminates the need for base configuration for HTML and Tailwind. By default, this project is utilizing [Vite](https://vitejs.dev/) for source code bundling but can be switch to any bundling tools.
+
+## Installation
+Clone this repository to get started.
+
+Run the following command in project directory to install TailwindCSS dependencies.
+```bash
+npm install
+```
+
+Run the following command:
+```bash
+npm run dev // start dev server
+npm run build // build for production
+npm run preview // locally preview production build
+```
+
+## Usage
+This starter kit serves as a boilerplate for creating web applications or sites. It eliminates the need for base configuration of web project development when using TailwindCSS. It is designed to be adaptable with any development stacks and does not include any specific bundler tools such as Vite, Webpack, or Parcel.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://github.com/mkfizi/starter-html/blob/main/LICENSE)
