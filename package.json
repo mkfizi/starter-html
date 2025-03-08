@@ -2,22 +2,22 @@
 	"name": "@mkfizi/starter-html",
 	"version": "0.1.0",
 	"description": "Boilerplate for HTML and TailwindCSS projects.",
- 	"keywords": [
+	"keywords": [
 		"Tailwindcss",
 		"Starter Kit",
 		"Boilerplate"
-	], 
+	],
 	"license": "MIT",
 	"author": "@mkfizi",
 	"type": "module",
 	"scripts": {
-		"dev": "npx vite",
+		"dev": "vite",
 		"build": "vite build",
-    	"preview": "vite preview"
+		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"vite": "^5.4.14",
 		"@tailwindcss/vite": "^4.0.10",
-		"tailwindcss": "^4.0.10"
+		"tailwindcss": "^4.0.10",
+		"vite": "^6.2.1"
 	}
 }
