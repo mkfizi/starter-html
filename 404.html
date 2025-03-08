@@ -13,7 +13,7 @@
         @import 'tailwindcss';
 
         /**
-        * This is workaround fix to handle viewport height issue on mobile browsers
+        * Viewport height issue on mobile browsers fix.
         * https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
         */
         @theme {
@@ -31,6 +31,16 @@
         }
     </style>
     <!-- END Styles -->
+
+    <!-- Inline code to avoid FOUC -->
+    <script>
+        // Viewport height issue on mobile browsers fix.
+        // https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
+        const setVH = () => document.documentElement.style.setProperty("--vh", innerHeight * 0.01 + "px");
+        addEventListener("resize", setVH);
+        setVH();
+    </script>
+     <!-- END Inline code to avoid FOUC -->
 
     <title>Page Not Found</title>
 </head>

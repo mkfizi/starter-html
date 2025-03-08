@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 /**
-* This is workaround fix to handle viewport height issue on mobile browsers
+* Viewport height issue on mobile browsers fix.
 * https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
 */
 @theme {
