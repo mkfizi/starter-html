@@ -7,7 +7,7 @@
     app.version = '0.1.0';
 
     app.init = () => {
-        console.log('Hello world!');
+        console.log('Starter HTML');
     }
     
     app.init();
