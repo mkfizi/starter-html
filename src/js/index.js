@@ -28,7 +28,7 @@
             
             // Handle window 'resize' event.
             resize: () => {
-                app.uid.viewportHeight.toggle();
+                app.ui.viewportHeight.toggle();
             }
         },
 
