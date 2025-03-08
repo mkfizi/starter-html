@@ -1,12 +1,6 @@
-/**
- * --------------------------------------------------------------------------
- * Starter HTML v0.1.0: index.js
- * Licensed under MIT (https://github.com/mkfizi/starter-html/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
+'use strict';
 
 (function () {
-    'use strict';
 
     const app = {};
 
