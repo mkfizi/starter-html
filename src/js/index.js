@@ -1,15 +1,12 @@
 'use strict';
 
-(function () {
-    const app = {};
-
-    app.name = 'Starter HTML';
-    app.version = '0.1.0';
-
-    app.init = () => {
-        console.log(app.name);
-        console.log(app.version);
+const app = {
+    name: 'Starter HTML',
+    version: '0.1.0',
+    init() {
+        console.log(this.name);
+        console.log(this.version);
     }
-    
-    app.init();
-})();
+};
+
+app.init();
