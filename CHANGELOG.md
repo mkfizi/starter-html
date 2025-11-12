@@ -16,6 +16,18 @@ Types of changes:
 ## [Unreleased]
 Put unreleased changes here.
 
+## [0.2.0] -2025-10-13
+### Added
+- Typescript support.
+- Add Vite configuration notes in `README.md`.
+
+### Changed
+- `package.json` content.
+- Revise to a modern directory structure.
+
+### Removed
+- `.editorconfig` and `.gitattributes`.
+
 ## [0.1.0] - 2025-01-05
 ### Added
 - First release.

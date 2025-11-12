@@ -1,8 +1,8 @@
 # Starter HTML
-Boilerplate for HTML and TailwindCSS projects.
+Starter kit for HTML and TailwindCSS projects.
 
 ## Usage
-This barebone boilerplate serves as starting point when developing web applications or sites. It eliminates the need for base configuration for HTML and Tailwind. By default, this project is utilizing [Vite](https://vitejs.dev/) for source code bundling but can be switch to any bundling tools.
+This barebone starter kit serves as starting point when developing web applications or sites. It eliminates the need for base configuration for HTML and Tailwind. By default, this project is utilizing [Vite](https://vitejs.dev/) for source code bundling but can be switch to any bundling tools.
 
 ## Installation
 Clone this repository to get started.
@@ -18,6 +18,35 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+## Vite Configuration
+
+Vite has been preconfigured in `vite.config.ts` to optimize the development workflow for AlpineJS and TailwindCSS projects:
+```typescript
+export default defineConfig({
+    root: './src',
+    publicDir: '../public',
+    build: {
+        outDir: '../dist',
+        emptyOutDir: true,
+        rollupOptions: {
+            input: glob.sync(resolve(__dirname, 'src/**/*.html'))
+        }
+    },
+    plugins: [
+        tailwindcss(),
+    ],
+})
+```
+
+- `root: './src'` — Specifies that your source content (HTML, JS, CSS) is inside `src/`.
+- `publicDir: '../public'` — Points to the `../public` directory for static assets that should be built as-is.
+- `build.outDir: '../dist'` — Specifies the output directory `../dist` for production build.
+- `build.emptyOutDir: true` — utomatically cleans the output directory before each build
+- `rollupOptions.input: glob.sync(resolve(__dirname, 'src/**/*.html'))` — Dynamically pick up all .html files in src/ as entry points (helpful for multi-page sites).
+- `plugins: [ tailwindcss() ]` — Includes TailwindCSS plugin for processing utility classes during development and production build.
+
+This configuration supports multi webpages by dynamically build all HTML files in `src/` into `dist/` and ensures proper asset handling in `public/`.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
